@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cm180q6kk1lar"]
+
+[ext_resource type="Script" uid="uid://j53lju7c38jj" path="res://scripts/characters/enemies/ratto_enemy.gd" id="1_8rdjs"]
+[ext_resource type="Texture2D" uid="uid://coh66sl3whoxo" path="res://assets/sprites/characters/enemies/battle-rat.png" id="2_4vxys"]
+
+[node name="RattoEnemy" type="Node2D" unique_id=1110176539]
+script = ExtResource("1_8rdjs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=875945767]
+texture_filter = 1
+texture = ExtResource("2_4vxys")

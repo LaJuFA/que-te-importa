@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5yk7sddadhn"]
+
+[ext_resource type="Script" uid="uid://1gsbde8gx25p" path="res://scripts/battle_systems/enemy_team_manager.gd" id="1_k4kof"]
+
+[node name="EnemyTeamManager" type="Node2D" unique_id=2061400920]
+script = ExtResource("1_k4kof")
