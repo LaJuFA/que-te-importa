@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://2nf3sdu8d6oq"]
+
+[ext_resource type="Script" uid="uid://v6bc834fuy6e" path="res://scripts/battle_systems/select_option_manager.gd" id="1_7rm5j"]
+[ext_resource type="Script" uid="uid://cewinkq10wwbj" path="res://scripts/ui/atk_button.gd" id="2_dsmus"]
+
+[node name="SelectOptionManager" type="Node2D" unique_id=681474019]
+script = ExtResource("1_7rm5j")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=80952185]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OptionContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1449218740]
+layout_mode = 2
+
+[node name="AtkButton" type="Button" parent="CenterContainer/OptionContainer" unique_id=1176576036]
+layout_mode = 2
+text = "atk"
+script = ExtResource("2_dsmus")
+
+[connection signal="pressed" from="CenterContainer/OptionContainer/AtkButton" to="CenterContainer/OptionContainer/AtkButton" method="_on_pressed"]

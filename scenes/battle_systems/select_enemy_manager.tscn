@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b2ggnhojkumxw"]
+
+[ext_resource type="Script" uid="uid://cre50py812bo8" path="res://scripts/battle_systems/select_enemy_manager.gd" id="1_cyix4"]
+
+[node name="SelectEnemyManager" type="Node2D" unique_id=1603061587]
+script = ExtResource("1_cyix4")
+
+[node name="Control" type="CenterContainer" parent="." unique_id=915984824]
+offset_right = 297.0
+offset_bottom = 271.0
+
+[node name="SelectContainer" type="HBoxContainer" parent="Control" unique_id=1405082792]
+layout_mode = 2

@@ -1,9 +1,6 @@
-@abstract class_name Character extends Node2D
+extends Button
 
-var characterName : String
-var hp : int
-var spd : float
-var atbStart : float
+signal atk_selected
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,7 +10,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func get_hp() -> int:
-	return self.hp
-
-@abstract func act() -> void
+func _on_pressed() -> void:
+	print("atk presionado")
+	emit_signal("atk_selected")

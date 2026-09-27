@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://drkdo3o2w2pm6"]
+
+[ext_resource type="PackedScene" uid="uid://b5yk7sddadhn" path="res://scenes/battle_systems/enemy_team_manager.tscn" id="1_g882b"]
+[ext_resource type="PackedScene" uid="uid://b2ggnhojkumxw" path="res://scenes/battle_systems/select_enemy_manager.tscn" id="2_dq7t1"]
+[ext_resource type="PackedScene" uid="uid://2nf3sdu8d6oq" path="res://scenes/battle_systems/select_option_manager.tscn" id="3_dq7t1"]
+
+[node name="BattleTest" type="Node2D" unique_id=253599015]
+
+[node name="EnemyTeamManager" parent="." unique_id=2061400920 instance=ExtResource("1_g882b")]
+position = Vector2(379, 217)
+
+[node name="SelectEnemyManager" parent="." unique_id=1603061587 instance=ExtResource("2_dq7t1")]
+position = Vector2(280, 117)
+
+[node name="SelectOptionManager" parent="." unique_id=681474019 instance=ExtResource("3_dq7t1")]

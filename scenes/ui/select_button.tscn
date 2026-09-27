@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c3l7gspsdcrqs"]
+
+[ext_resource type="Texture2D" uid="uid://biqmo0tr6wsn1" path="res://assets/sprites/ui/target-button.png" id="1_5n3vh"]
+[ext_resource type="Texture2D" uid="uid://dmii5lh0ba0dt" path="res://assets/sprites/ui/target-button-normal.png" id="1_e73f2"]
+[ext_resource type="Script" uid="uid://b1opoxfxppyd8" path="res://scripts/ui/select_button.gd" id="2_2hiqi"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2hiqi"]
+device = -1
+keycode = 90
+unicode = 122
+
+[sub_resource type="Shortcut" id="Shortcut_smhyf"]
+events = [SubResource("InputEventKey_2hiqi")]
+
+[node name="SelectButton" type="TextureButton" unique_id=806469976 node_paths=PackedStringArray("shortcut_context")]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+shortcut_context = NodePath(".")
+shortcut = SubResource("Shortcut_smhyf")
+texture_normal = ExtResource("1_e73f2")
+texture_hover = ExtResource("1_5n3vh")
+script = ExtResource("2_2hiqi")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
